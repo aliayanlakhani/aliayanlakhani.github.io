@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ali Ayan - Mechatronics Engineer, Computational Mechanics student, and Industrial AI enthusiast.">
+  <meta name="keywords" content="Ali Ayan, Computational Mechanics, Computer Vision, Industrial AI, Robotics, TUM">
+  <meta name="author" content="Ali Ayan">
+  <title>Ali Ayan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .profile-placeholder{width:100%;aspect-ratio:1/1;border-radius:50%;display:grid;place-items:center;font-family:Orbitron,sans-serif;font-size:clamp(5rem,12vw,10rem);font-weight:800;color:#fff;background:linear-gradient(135deg,#00f5ff,#7c3aed);box-shadow:0 0 80px rgba(0,245,255,.35);border:2px solid rgba(255,255,255,.2)}
+    .hero-image-container>img{display:none}.hero-image-container{min-width:min(420px,80vw)}
+    .project-card img{object-fit:cover}.contact-form-card form button{cursor:pointer}
+  </style>
+</head>
+<body>
+<canvas id="liquid-background"></canvas>
+<div class="cursor"></div><div class="bg-grid"></div><div class="gradient-orb orb1"></div><div class="gradient-orb orb2"></div>
+<header class="header">
+  <div class="logo"><span>Ali</span>&nbsp;Ayan</div>
+  <nav class="navbar">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="menu-btn"><i class="ri-menu-3-line"></i></div>
+</header>
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="hero-tag">Engineering Intelligence</p>
+    <h1>Hi, I'm <span>Ali Ayan</span><br>Mechatronics Engineer & AI Enthusiast</h1>
+    <p class="hero-description">Building practical systems at the intersection of computer vision, industrial AI, robotics, automation and computational mechanics.</p>
+    <div class="hero-buttons"><button class="primary-btn" id="resumeBtn">Download Resume</button><a href="#contact" class="secondary-btn">Let's Connect</a></div>
+    <div class="resume-modal" id="resumeModal"><div class="resume-modal-content"><span class="close-modal">&times;</span><h2>Resume</h2><div class="resume-options"><a href="Ali_Ayan_CV.pdf" class="resume-option" download>Download Ali Ayan CV</a></div></div></div>
+  </div>
+  <div class="hero-right"><div class="hero-image-container"><div class="profile-placeholder"><img src="assets/ayan.png" alt=""></div><div class="floating-card card1">Computer Vision</div><div class="floating-card card2">Industrial AI</div><div class="floating-card card3">Robotics</div></div></div>
+</section>
+<section class="about section" id="about">
+  <div class="section-header hidden"><span>ABOUT ME</span><h2>Engineering Digital Innovation</h2></div>
+  <div class="about-container"><div class="about-left"><div class="glass-card hidden"><h3>Who Am I?</h3><p>I am Ali Ayan, a Mechatronics Engineer and M.Sc. Computational Mechanics student at the Technical University of Munich.</p><p>I focus on computer vision, local AI tools, machine recognition, robotics, numerical simulation and industrial automation, with practical industry experience at Krones AG.</p></div></div>
+  <div class="about-right"><div class="info-grid"><div class="info-card hidden"><i class="ri-eye-line"></i><h3>Computer Vision</h3></div><div class="info-card hidden"><i class="ri-robot-2-line"></i><h3>Robotics</h3></div><div class="info-card hidden"><i class="ri-brain-line"></i><h3>Industrial AI</h3></div><div class="info-card hidden"><i class="ri-settings-3-line"></i><h3>Simulation</h3></div></div></div></div>
+</section>
+<section class="expertise section" id="expertise"><div class="tech-bg"></div><div class="section-header hidden"><span>EXPERTISE</span><h2>Tech Stack & Skills</h2><p>Technologies and engineering methods I use to turn complex problems into practical prototypes.</p></div>
+<div class="skills-container">
+  <div class="skill-box html hidden"><div class="glow"></div><img src="assets/html.png" alt=""><h3>Python</h3><p>Automation, analysis and AI prototyping.</p></div>
+  <div class="skill-box js hidden"><div class="glow"></div><img src="assets/javascript.png" alt=""><h3>OpenCV</h3><p>Visual detection and image processing.</p></div>
+  <div class="skill-box ts hidden"><div class="glow"></div><img src="assets/Typescript.png" alt=""><h3>PyTorch</h3><p>Deep learning and model experimentation.</p></div>
+  <div class="skill-box react hidden"><div class="glow"></div><img src="assets/react.png" alt=""><h3>Computer Vision</h3><p>Detection, matching and recognition.</p></div>
+  <div class="skill-box node hidden"><div class="glow"></div><img src="assets/node.png" alt=""><h3>ROS2</h3><p>Robotics software and system integration.</p></div>
+  <div class="skill-box mongo hidden"><div class="glow"></div><img src="assets/mongodb.png" alt=""><h3>Machine Learning</h3><p>Data-driven engineering workflows.</p></div>
+  <div class="skill-box tailwind hidden"><div class="glow"></div><img src="assets/tailwind.png" alt=""><h3>CFD & FEM</h3><p>Numerical modelling and simulation.</p></div>
+  <div class="skill-box motion hidden"><div class="glow"></div><img src="assets/motion.png" alt=""><h3>Motion Planning</h3><p>Paths, controls and industrial motion.</p></div>
+</div></section>
+<section class="projects section" id="projects"><div class="section-header hidden"><span>PROJECTS</span><h2>Featured Work</h2></div><div class="project-grid">
+  <div class="project-card hidden"><img src="assets/project1.png" alt="Technical interface concept"><div class="project-content"><h3>Industrial Machine Recognition</h3><p>Computer-vision workflow for identifying machine families in complex technical layout drawings.</p><div class="project-tags"><span>Python</span><span>OpenCV</span><span>AI</span></div><a href="#contact">Request Overview</a></div></div>
+  <div class="project-card hidden"><img src="assets/project2.png" alt="AI interface concept"><div class="project-content"><h3>Visual Reference Matching</h3><p>Local image-matching pipeline using classical and learned features for assembly recognition.</p><div class="project-tags"><span>PyTorch</span><span>DINOv2</span><span>GPU</span></div><a href="#contact">Request Overview</a></div></div>
+</div></section>
+<section class="experience section" id="experience"><div class="section-header hidden"><span>EXPERIENCE</span><h2>Professional Journey</h2></div><div class="experience-grid">
+  <div class="experience-card dev hidden"><div class="exp-icon"><i class="ri-building-4-line"></i></div><div class="exp-content"><span class="exp-year">Current</span><h3>Working Student</h3><h4>Krones AG</h4><p>Supporting engineering workflows related to industrial automation, machine classification, annotation and AI-assisted recognition.</p></div></div>
+  <div class="experience-card motion hidden"><div class="exp-icon"><i class="ri-graduation-cap-line"></i></div><div class="exp-content"><span class="exp-year">Current</span><h3>M.Sc. Student</h3><h4>Technical University of Munich</h4><p>Computational Mechanics with focus on numerical methods, simulation and intelligent engineering systems.</p></div></div>
+  <div class="experience-card hr hidden"><div class="exp-icon"><i class="ri-robot-2-line"></i></div><div class="exp-content"><span class="exp-year">Projects</span><h3>AI & Robotics Development</h3><h4>Local Prototypes</h4><p>Computer vision, annotation tools, reference matching, ROS2, path planning and motion-control experiments.</p></div></div>
+  <div class="experience-card design hidden"><div class="exp-icon"><i class="ri-tools-line"></i></div><div class="exp-content"><span class="exp-year">Foundation</span><h3>B.Sc. Mechatronics</h3><h4>Engineering Background</h4><p>Mechanical, electrical and software foundations for multidisciplinary engineering systems.</p></div></div>
+</div></section>
+<section class="certificates section" id="education"><div class="section-header hidden"><span>EDUCATION</span><h2>Academic Foundation</h2></div><div class="certificate-grid">
+  <div class="certificate-card hidden"><div class="exp-icon"><i class="ri-graduation-cap-line"></i></div><h3>M.Sc. Computational Mechanics</h3><p>Technical University of Munich</p></div>
+  <div class="certificate-card hidden"><div class="exp-icon"><i class="ri-cpu-line"></i></div><h3>B.Sc. Mechatronics</h3><p>Engineering foundation across mechanics, electronics and software</p></div>
+  
+</div></section>
+<section class="contact section" id="contact"><div class="contact-bg"></div><div class="section-header hidden"><span>CONTACT</span><h2>Let's Build The Future Together</h2><p>Interested in AI, robotics, simulation or industrial technology? Let's connect.</p></div><div class="contact-wrapper">
+  <div class="contact-info-card hidden"><div class="contact-title"><h3>Get In Touch</h3><p>Open to engineering opportunities, research collaboration and technical exchanges.</p></div><div class="contact-info">
+    <div class="contact-item"><div class="contact-icon"><i class="ri-mail-line"></i></div><div><span>Email</span><h4>aliayanlakhani@gmail.com</h4></div></div>
+    <div class="contact-item"><div class="contact-icon"><i class="ri-map-pin-line"></i></div><div><span>Location</span><h4>Munich / Raubling, Bavaria, Germany</h4></div></div>
+  </div><div class="contact-socials"><a href="https://github.com/aliayanlakhani" target="_blank"><i class="ri-github-fill"></i></a><a href="https://linkedin.com/in/ali-ayan-lakhani" target="_blank"><i class="ri-linkedin-fill"></i></a></div></div>
+  <div class="contact-form-card hidden"><div class="form-header"><h3>E-mail</h3></div><form id="contactForm"><div class="input-group"><div class="input-box"><label><i class="ri-user-3-line"></i> Full Name</label><input id="name" type="text" placeholder="Enter your full name" required></div><div class="input-box"><label><i class="ri-mail-line"></i> Email Address</label><input id="email" type="email" placeholder="Enter your email" required></div></div><div class="input-box"><label><i class="ri-chat-1-line"></i> Subject</label><input id="subject" type="text" placeholder="Project discussion / Collaboration" required></div><div class="input-box"><label><i class="ri-message-2-line"></i> Your Message</label><textarea id="message" rows="6" placeholder="Write your message here..."></textarea></div><button type="submit">Send Message <i class="ri-send-plane-fill"></i></button></form></div>
+</div></section>
+<footer class="footer"><div class="footer-content"><p>&copy; 2026 Ali Ayan</p><span>Designed & Developed for Ali Ayan</span></div></footer>
+<script src="assets/script.js"></script><script src="assets/liquid-background.js"></script>
+<script>
+ document.getElementById('contactForm').addEventListener('submit',function(e){e.preventDefault();const s=encodeURIComponent(document.getElementById('subject').value);const b=encodeURIComponent('From: '+document.getElementById('name').value+' ('+document.getElementById('email').value+')\n\n'+document.getElementById('message').value);window.location.href='mailto:aliayanlakhani@gmail.com?subject='+s+'&body='+b;});
+</script>
+</body></html>
